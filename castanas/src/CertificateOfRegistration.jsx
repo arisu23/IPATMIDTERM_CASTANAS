@@ -921,7 +921,7 @@ const CertificateOfRegistration = () => {
                 const tuitionUnits = item.tuition_units?.split(",") || [];
                 const sections = item.subject_section?.split(",") || [];
                 const schedules = item.subject_schedule_room?.split(",") || [];
-                const faculties = item.subject_faculty?.split(".") || [];
+                const faculties = item.subject_faculty?.split("/") || [];
 
                 // Determine the maximum length of the arrays
                 const maxLength = Math.max(
